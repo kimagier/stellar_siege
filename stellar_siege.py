@@ -144,12 +144,12 @@ def spiele_level(lade_hintergrund, lade_alien_img, erstelle_aliens, lade_hinterg
     initial_alien_count = len(aliens)
 
     # Bullet appearance depends on damage upgrade
-    bullet_color = (0, 0, 139)
+    bullet_color = (0, 255, 0)
     bullet_width = 5
     if "damage" in active_upgrades:
         bullet_width = 10
-        # Keep empowered shots dark blue as well
-        bullet_color = (0, 0, 139)
+        # Keep empowered shots green as well
+        bullet_color = (0, 255, 0)
     bullet_img = pygame.Surface((bullet_width, 15))
     bullet_img.fill(bullet_color)
     player_bullets = []
